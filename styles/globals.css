@@ -8,3 +8,10 @@ body {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  background-color: #f0f0f0;
+}

@@ -1,14 +1,16 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import Link from "next/link";
+import "../styles/globals.css";
 
 function App({ Component, pageProps }) {
   return (
-    <>
-      <Head>
-        <title>Next.js App</title>
-      </Head>
+    <div>
+      <nav>
+        <Link href="/">Contact</Link>
+        <Link href="/cards">Cartes</Link>
+        <Link href="/clickCounterPage">Compteur</Link>
+      </nav>
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
 
